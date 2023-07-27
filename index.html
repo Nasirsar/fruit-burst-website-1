@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford:'#da373d',
+                        clifford: '#da373d',
                     }
                 }
             }
@@ -26,22 +26,7 @@
     <header>
         <nav class="max-w-screen-xl mx-auto mb-10">
             <div class="navbar bg-red-600 rounded-full 	">
-                <div class="dropdown ">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
+
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -50,16 +35,34 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
+
                 <div class="navbar-center flex md:flex-row ">
-                    <img  src="images/logo.png" alt="">
+                    <img src="images/logo.png" alt="">
                     <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
                 </div>
-                <div class="relative flex-1  flex-row-reverse items-center text-gray-400 focus-within:text-gray-600 pr-5  ">
+                <div
+                    class="relative flex-1  flex-row-reverse items-center text-gray-400 focus-within:text-gray-600 pr-5  ">
                     <input type="text" placeholder="Search here"
                         class="input input-bordered bg-white rounded-full w-3/4 hidden md:inline-block lg:inline-block" />
                     <i class="fa-solid fa-magnifying-glass absolute h-5 w-9 hidden md:inline-block lg:inline-block"></i>
                 </div>
-            </div>          
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 left-[-143px] ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -207,8 +210,8 @@
                 <p class="max-w-xl mx-auto">Contrary to popular belief, is not simply random text. It has roots in a
                     piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="flex  gap-8 justify-center">
-                <div class="space-y-11">
+            <div class="flex flex-col lg:flex-row gap-8 justify-center">
+                <div class="space-y-11 order-2 lg:order-none">
                     <div class="space-y-5">
                         <div class="flex items-center gap-3  ">
                             <i class="fa-solid fa-people-group rounded-3xl bg-slate-400 p-2"></i>
@@ -247,11 +250,11 @@
                             fruits.</p>
                     </div>
                 </div>
-                <div>
+                <div class="order-1 lg:order-none">
                     <img src="images/whychoose1.png" alt="">
                 </div>
 
-                <div class="space-y-11">
+                <div class="space-y-11 order-3 ">
                     <div class="flex items-right gap-3">
                         <div>
                             <h3 class="text-2xl font-extrabold text-right">Integrated Supplier</h3>
