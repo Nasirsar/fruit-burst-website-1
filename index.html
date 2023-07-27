@@ -67,7 +67,7 @@
     </header>
     <main>
         <!-- carousel -->
-        <section class="max-w-screen-xl mx-auto mb-52 relative ">
+        <section class="max-w-screen-xl mx-auto mb-10 lg:mb-52 relative ">
             <div class="carousel w-full">
                 <div id="slide2" class="carousel-item relative w-full items-center">
                     <img src="./images/banner1.png" class="w-full" />
@@ -170,37 +170,180 @@
         </section>
         <!-- deal of the day -->
         <section class="deal-day max-w-screen-xl mx-auto mb-10">
-            <div class="flex justify-between">
+            <div class="flex flex-col md:flex-row gap-6 text-center lg:text-left items-center justify-between mb-10">
                 <div>
-                    <h2 class="text-sm md:text-xl lg:text-3xl font-bold lg:font-extrabold">Deal of the day</h2>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <h2 class="text-sm  md:text-xl lg:text-3xl font-bold lg:font-extrabold">Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:29;"></span>
-                            </span>
-                            days
-                        </div>
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:15;"></span>
-                            </span>
-                            hours
-                        </div>
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:25;"></span>
-                            </span>
-                            min
-                        </div>
-                        <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:08;"></span>
-                            </span>
-                            sec
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:29;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:25;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:08;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="text-center space-y-6">
+                    <div class="w-[20%] md:w-24 mx-auto ">
+                        <img src="images/fruit6.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ - 18.85$</h3>
+                        <p class="text-sm md:text-xl lg:text-2xl ">Apples</p>
+                    </div>
+                    <!-- rating -->
+                    <div class="rating text-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <!-- model -->
+                    <div>
+                        <label for="my_modal_6" class="text-sm text-red-400">Details</label>
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div>
+                                    <img class="w-[20%] md:w-24 mx-auto" src="images/fruit6.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ -
+                                        18.85$</h3>
+                                    <p class="text-sm md:text-xl lg:text-2xl ">Apples</p>
+                                </div>
+                                <label for="my_modal_6" class="btn">Close!</label>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="text-center space-y-6">
+                    <div class="w-[20%] md:w-24 mx-auto">
+                        <img src="images/fruit7.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ - 18.85$</h3>
+                        <p class="text-sm md:text-xl lg:text-2xl ">orange</p>
+                    </div>
+                    <!-- rating -->
+                    <div class="rating text-center">
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <!-- model -->
+                    <div>
+                        <label for="my_modal_7" class="text-sm text-red-400">Details</label>
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div>
+                                    <img class="w-24 mx-auto" src="images/fruit7.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ -
+                                        18.85$</h3>
+                                    <p class="text-sm md:text-xl lg:text-2xl ">orange</p>
+                                </div>
+                                <label for="my_modal_7" class="btn">Close!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center space-y-6">
+                    <div class="w-[20%] md:w-24 mx-auto">
+                        <img src="images/fruit8.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ - 18.85$</h3>
+                        <p class="text-sm md:text-xl lg:text-2xl ">Red Dragon</p>
+                    </div>
+                    <!-- rating -->
+                    <div class="rating text-center">
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <!-- model -->
+                    <div>
+                        <label for="my_modal_8" class="text-sm text-red-400">Details</label>
+                        <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div>
+                                    <img class="w-24 mx-auto" src="images/fruit8.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold p-4">12.90$ -
+                                        18.85$</h3>
+                                    <p class="text-sm md:text-xl lg:text-2xl ">Red Dragon</p>
+                                </div>
+                                <label for="my_modal_8" class="btn">Close!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center space-y-6">
+                    <div class="w-[20%] md:w-24 mx-auto">
+                        <img src="images/fruit9.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ - 18.85$</h3>
+                        <p class="text-sm md:text-xl lg:text-2xl ">Banana</p>
+                    </div>
+                    <!-- rating -->
+                    <div class="rating text-center">
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <!-- model -->
+                    <div>
+                        <label for="my_modal_9" class="text-sm text-red-400">Details</label>
+                        <input type="checkbox" id="my_modal_9" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div>
+                                    <img class="w-[20%] md:w-24 mx-auto " src="images/fruit9.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="-px-10 text-sm md:text-xl lg:text-4xl font-bold lg:font-semibold">12.90$ -
+                                        18.85$</h3>
+                                    <p class="text-sm md:text-xl lg:text-2xl ">Banana</p>
+                                </div>
+                                <label for="my_modal_9" class="btn">Close!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="max-w-screen-xl mx-auto mb-10 rounded-3xl hero min-h-screen"
@@ -350,39 +493,37 @@
             <div class="flex flex-col lg:flex-row gap-8 justify-center">
                 <div class="space-y-11 order-2 lg:order-none">
                     <div class="space-y-5">
-                        <div class="flex items-center gap-3  ">
+                        <div class="md:flex text-center gap-3  ">
                             <i class="fa-solid fa-people-group rounded-3xl bg-slate-400 p-2"></i>
                             <h3 class="  text-2xl font-extrabold">Dedicated Team</h3>
 
                         </div>
-                        <div class="pl-10">
-                            <hr class="w-40 border-3 ">
+                        <div class="md:pl-10">
+                            <hr class="w-40 border-3 m-auto md:ml-0">
                         </div>
-                        <p class="pl-11 text-xs">Professional employees are there for you to pick<br>the most amazing
-                            and fresh
-                            fruits.</p>
+                        <p class="md:pl-11 text-xs md:text-left text-center">Professional employees are there for you to pick<br>the most amazing and fresh fruits.</p>
                     </div>
                     <div class="space-y-5">
-                        <div class="flex  items-center gap-3">
+                        <div class="md:flex  text-center gap-3">
                             <i class="fa-solid fa-heart rounded-3xl bg-slate-400 p-2"></i>
                             <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
                         </div>
-                        <div class="pl-10">
-                            <hr class="w-40 border-3 ">
+                        <div class="md:pl-10">
+                            <hr class="w-40 border-3 md:ml-0 m-auto ">
                         </div>
-                        <p class="pl-11 text-xs">Professional employees are there for you to pick<br>the most amazing
+                        <p class="md:pl-11 text-xs text-center md:text-left">Professional employees are there for you to pick<br>the most amazing
                             and fresh
                             fruits.</p>
                     </div>
                     <div class="space-y-5 order-2">
-                        <div class="flex  items-center gap-3">
+                        <div class="md:flex  text-center gap-3">
                             <i class="fa-solid fa-gift rounded-3xl bg-gray-400 p-2 "></i>
                             <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
                         </div>
-                        <div class="pl-10">
-                            <hr class="w-40 border-3 ">
+                        <div class="md:pl-10">
+                            <hr class="w-40 border-3 md:ml-0 m-auto ">
                         </div>
-                        <p class="pl-11 text-xs">Professional employees are there for you to pick<br>the most amazing
+                        <p class="md:pl-11 text-xs text-center md:text-left">Professional employees are there for you to pick<br>the most amazing
                             and fresh
                             fruits.</p>
                     </div>
@@ -392,46 +533,46 @@
                 </div>
 
                 <div class="space-y-11 order-3 ">
-                    <div class="flex items-right gap-3">
+                    <div class="md:flex text-center gap-3 ">
                         <div>
-                            <h3 class="text-2xl font-extrabold text-right">Integrated Supplier</h3>
-                            <div class="pl-20 mt-5">
-                                <hr class="w-40 border-3 ">
+                            <h3 class="text-2xl font-extrabold md:text-right">Integrated Supplier</h3>
+                            <div class="md:pl-20 mt-5">
+                                <hr class="w-40 border-3 md:mr-0 m-auto ">
                             </div>
-                            <p class="text-right text-xs mt-5">Professional employees are there for you to pick<br>the
+                            <p class="md:text-right text-xs mt-5">Professional employees are there for you to pick<br>the
                                 most amazing
                                 and fresh
                                 fruits.</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-people-group rounded-3xl bg-slate-400 p-2"></i>
+                            <i class="fa-solid fa-people-group rounded-3xl bg-slate-400 p-2 mt-5 md:mt-0"></i>
                         </div>
 
                     </div>
-                    <div class="flex  items-right gap-3 ">
+                    <div class="md:flex  text-center gap-3 ">
                         <div>
-                            <h3 class="text-2xl font-extrabold text-right">Sustainable Practice</h3>
-                            <div class="pl-20 mt-5">
-                                <hr class="w-40 border-3 ">
+                            <h3 class="text-2xl font-extrabold md:text-right">Sustainable Practice</h3>
+                            <div class="mdpl-20 mt-5">
+                                <hr class="w-40 border-3 md:mr-0 m-auto ">
                             </div>
-                            <p class=" text-right text-xs mt-5">Professional employees are there for you to pick<br>the
+                            <p class=" md:text-right text-center text-xs mt-5">Professional employees are there for you to pick<br>the
                                 most amazing and fresh fruits.</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-heart rounded-3xl bg-slate-400 p-2 "></i>
+                            <i class="fa-solid fa-heart rounded-3xl bg-slate-400 p-2 md:mt-0 mt-5 "></i>
                         </div>
                     </div>
-                    <div class="flex  items-right gap-3">
+                    <div class="md:flex  text-center gap-3">
                         <div>
-                            <h3 class="text-2xl font-extrabold text-right">The Benefits Only</h3>
-                            <div class="pl-20 mt-5">
-                                <hr class="w-40 border-3 ">
+                            <h3 class="text-2xl font-extrabold md:text-right">The Benefits Only</h3>
+                            <div class="md:pl-20 mt-5">
+                                <hr class="w-40 border-3 md:mr-0 m-auto ">
                             </div>
-                            <p class="text-right text-xs mt-5">Professional employees are there for you to pick<br>the
+                            <p class="md:text-right text-center text-xs mt-5">Professional employees are there for you to pick<br>the
                                 most amazing freshfruits.</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-gift rounded-3xl  bg-gray-400 p-2 "></i>
+                            <i class="fa-solid fa-gift rounded-3xl  bg-gray-400 p-2 mt-5 md:mt-0 "></i>
                         </div>
                     </div>
                 </div>
